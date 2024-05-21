@@ -17,4 +17,7 @@ module.exports = {
     SMPT_SERVICE: "gamil",
     SMPT_HOST: "smtp.gmail.com",
     SMPT_PORT: 465,
+    cloud_name:'dzvbykaxd',
+    cloudapikey:816369768655571,
+    cloudapisecret:'Zp-oaGNt7KNtisqBveTAen0DHW4'
   };

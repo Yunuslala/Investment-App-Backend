@@ -2,13 +2,14 @@ const express=require("express");
 const TicketRouter=express.Router();
 const {Authentication}=require("../middlewares/Authenitcation");
 const { GetAllTickets, RegisterTicket, GetTicketsByUserId } = require("../controllers/Ticket.Controller");
+require('dotenv').config();
 var multer = require("multer");
 const cloudinary = require("cloudinary").v2;
 const { CloudinaryStorage } = require("multer-storage-cloudinary");
 cloudinary.config({
-    cloud_name: "dzvbykaxd",
-    api_key: "816369768655571",
-    api_secret: "Zp-oaGNt7KNtisqBveTAen0DHW4",
+    cloud_name:env.cloud_name,
+    api_key: env.cloudapikey,
+    api_secret: env.cloudapisecret,
   });
   const storage = new CloudinaryStorage({
     cloudinary: cloudinary,
